@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Weather</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  <div class="container">
+    <div class="weather-card">
+      <!-- Search input inside the card -->
+      <div class="input-section">
+        <input type="text" id="city" placeholder="Enter city name" class="input-field">
+        <button class="get-weather" onclick="getWeather()">Get Weather</button>
+      </div>
+
+      <!-- Weather icon, initially hidden -->
+      <div class="weather-icon" id="weatherIcon" style="display: none;">
+        <img id="weatherImage" src="" alt="Weather Icon">
+      </div>
+
+      <div class="weather-details">
+        <h2 id="aboutToday">About Today</h2>
+        <p id="date" class="date">
+            <span id="day">--</span>, <span id="fullDate">--</span> <span id="time">--</span>
+          </p>
+          
+        <p id="temperature" class="temperature">--°C</p>
+
+        
+
+        <!-- Small cards for Rain, Wind, and Humidity -->
+        <div class="small-cards">
+          <div class="small-card">
+            <img src="rain-icon.png" alt="Rain" class="small-icon">
+            <p class="label">Rain</p>
+            <p id="rain" class="value">--</p>
+          </div>
+          <div class="small-card">
+            <img src="wind-icon.png" alt="Wind" class="small-icon">
+            <p class="label">Wind</p>
+            <p id="wind" class="value">--</p>
+          </div>
+          <div class="small-card">
+            <img src="humidity-icon.png" alt="Humidity" class="small-icon">
+            <p class="label">Humidity</p>
+            <p id="humidity" class="value">--</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

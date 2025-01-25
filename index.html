@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="screen">
+      <div class="weather-icon">
+        <img src="weather.jpg" alt="Weather Icon">
+      </div>
+      <h1 class="title">Daily Weather</h1>
+      <p class="subtitle">Get to know your weather maps and radar precipitation forecast</p>
+      <button class="get-started" onclick="startApp()">Get Started</button>
+      <p class="footer">Design and Developed by Deven</p>
+    </div>
+  </div>
+
+  <script>
+    function startApp() {
+      window.location.href = 'weather.html';
+    }
+  </script>
+</body>
+</html>
